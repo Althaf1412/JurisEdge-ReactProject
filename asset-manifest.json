@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/your-repo-name/static/css/main.13681a25.css",
-    "main.js": "/your-repo-name/static/js/main.c4feb285.js",
-    "static/js/453.96453769.chunk.js": "/your-repo-name/static/js/453.96453769.chunk.js",
-    "static/media/farukpic.jpg": "/your-repo-name/static/media/farukpic.24943ba11086996f1888.jpg",
-    "static/media/farulogo.png": "/your-repo-name/static/media/farulogo.82a499e62e4d4dbfdb98.png",
-    "static/media/ambedkar.jpg": "/your-repo-name/static/media/ambedkar.6ed7eac696ee252ca8ef.jpg",
-    "index.html": "/your-repo-name/index.html",
-    "main.13681a25.css.map": "/your-repo-name/static/css/main.13681a25.css.map",
-    "main.c4feb285.js.map": "/your-repo-name/static/js/main.c4feb285.js.map",
-    "453.96453769.chunk.js.map": "/your-repo-name/static/js/453.96453769.chunk.js.map"
+    "main.css": "/JurisEdge-ReactProject/static/css/main.7c5c560c.css",
+    "main.js": "/JurisEdge-ReactProject/static/js/main.34a2cab4.js",
+    "static/js/453.96453769.chunk.js": "/JurisEdge-ReactProject/static/js/453.96453769.chunk.js",
+    "static/media/farukpic.jpg": "/JurisEdge-ReactProject/static/media/farukpic.24943ba11086996f1888.jpg",
+    "static/media/farulogo.png": "/JurisEdge-ReactProject/static/media/farulogo.82a499e62e4d4dbfdb98.png",
+    "static/media/ambedkar.jpg": "/JurisEdge-ReactProject/static/media/ambedkar.6ed7eac696ee252ca8ef.jpg",
+    "index.html": "/JurisEdge-ReactProject/index.html",
+    "main.7c5c560c.css.map": "/JurisEdge-ReactProject/static/css/main.7c5c560c.css.map",
+    "main.34a2cab4.js.map": "/JurisEdge-ReactProject/static/js/main.34a2cab4.js.map",
+    "453.96453769.chunk.js.map": "/JurisEdge-ReactProject/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.13681a25.css",
-    "static/js/main.c4feb285.js"
+    "static/css/main.7c5c560c.css",
+    "static/js/main.34a2cab4.js"
   ]
 }
