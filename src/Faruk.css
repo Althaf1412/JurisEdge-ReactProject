@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+.law-quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: #1f2d3d;
+  margin: 30px 0;
+  padding: 24px;
+  border-left: 5px solid #0077b6;
+  background: #f6faff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.law-quote footer {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0077b6;
+  text-align: right;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  height: 70px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  /* position: sticky;         🔥 Make it sticky */
+  top: 0;                   /* 🔥 Stick to top */
+  z-index: 1000;            /* ✅ Ensure it stays above other elements */
+}
+
+.logo img {
+  height: 50px;
+  object-fit: contain;
+}
+
+.navbar {
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.nav-links li a {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links li a.active-link {
+  color: #00d8ff; /* Highlight color */
+  border-bottom: 2px solid #00d8ff;
+  font-weight: bold;
+}
+
+
+.nav-links li a:hover {
+  color: #00d8ff;
+  border-bottom: 2px solid #00d8ff;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  margin-left: 20px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #2c5364;
+    padding: 20px;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.layout-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.left-layout {
+  width: 30%;
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic-container img {
+  width: 220px;
+  height: 220px;
+  
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #626763;
+  
+}
+
+.profile-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+.follow-button {
+  background-color: #fff;
+  color: #333;
+  border-radius: 50px;
+  padding: 20px 20px;
+  width: 120px;
+  height: 90px;
+  transition: width 0.4s ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+  background: #1f1f1f;
+  color: #eee;
+}
+
+.follow-button.hovered {
+  width: 240px;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #1f1f1f;
+}
+
+.follow-text {
+  white-space: nowrap;
+}
+
+.social-icons-1 {
+  display: flex;
+  gap: 14px;
+}
+
+.social-icons-1 a {
+  color: #000;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons-1 a:hover {
+  transform: scale(1.2);
+}
+
+.wildcard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background: #f5f5f5;
+}
+
+.wildcard {
+  max-width: 500px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wildcard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+}
+
+.quote-icon {
+  font-size: 2rem;
+  color: #1e90ff;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.wildcard-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.wildcard-author {
+  font-weight: bold;
+  color: #1e90ff;
+  margin-top: 0.5rem;
+}
+.expertise-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.expertise-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0d2c5b;
+  margin-bottom: 30px;
+}
+.expertise-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.expertise-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.expertise-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 25px;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.expertise-card {
+  background: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.expertise-card:hover {
+  transform: translateY(-5px);
+}
+
+.expertise-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.expertise-card h3 {
+  font-size: 1.2rem;
+  color: #0d2c5b;
+  margin-top: 10px;
+}
+
+.expertise-card p {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 8px;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .expertise-section {
+    padding: 1rem;
+  }
+
+  .expertise-title {
+    font-size: 1.5rem;
+  }
+
+  .expertise-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+.right-layout {
+  position: relative;
+  flex: 1;
+  padding: 30px;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Content stays above the background image */
+.right-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Ambedkar image fading in from right */
+.ambedkar-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+ 
+  width: 65%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent),
+              url('./images/ambedkar.jpg') no-repeat right center;
+  background-size: contain;
+  opacity: 0.1; /* dimmish effect */
+  z-index: 1;
+  pointer-events: none; /* so user can still interact with content */
+}
+.right-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.quote-section-fixed {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+
+.law-quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-left: 4px solid #0077cc;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.law-quote footer {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: right;
+}
+/* Modal Overlay */
+.expertise-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal Box */
+.expertise-modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 480px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Close Button */
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #444;
+  cursor: pointer;
+}
+
+/* Modal Header */
+.modal-headerss {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.modal-headerss h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Icon Style */
+.modal-icon {
+  font-size: 1.7rem;
+  color: #004aad;
+}
+
+/* Add these styles to your Faruk.css file */
+
+/* Modal Actions - Book Appointment Button */
+.modal-actions {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.book-appointment-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.book-appointment-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+}
+
+.book-appointment-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+}
+
+/* Add these styles to your Appointment.css file */
+
+/* Preselected Notice */
+.preselected-notice {
+  background: linear-gradient(135deg, #48bb78, #38a169);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 8px rgba(72, 187, 120, 0.2);
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced form styling for preselected case type */
+.form-group select.preselected {
+  border-color: #48bb78;
+  box-shadow: 0 0 0 3px rgba(72, 187, 120, 0.1);
+  background-color: #f0fff4;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .book-appointment-btn {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+  
+  .preselected-notice {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+}
+
+/* Page Load Animation - Add this to your Faruk.css */
+
+/* Only animate the main content areas, not the entire page container */
+.layout-container {
+  animation: fadeInFromBottom 0.8s ease-out forwards;
+}
+
+/* Keyframe animation for fade in from bottom */
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth transition for navigation between pages */
+.page-container.page-transition-enter {
+  animation: fadeInFromBottom 0.6s ease-out forwards;
+}
+
+/* For mobile responsiveness - slightly faster animation */
+@media (max-width: 768px) {
+  @keyframes fadeInFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .page-container {
+    animation-duration: 0.6s;
+  }
+}
+
+
+
+
+
+
