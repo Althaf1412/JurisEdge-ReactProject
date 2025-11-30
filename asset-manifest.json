@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/JurisEdge-ReactProject/static/css/main.7c5c560c.css",
-    "main.js": "/JurisEdge-ReactProject/static/js/main.782924bb.js",
+    "main.js": "/JurisEdge-ReactProject/static/js/main.d6ff3c88.js",
     "static/js/453.96453769.chunk.js": "/JurisEdge-ReactProject/static/js/453.96453769.chunk.js",
     "static/media/farukpic.jpg": "/JurisEdge-ReactProject/static/media/farukpic.24943ba11086996f1888.jpg",
     "static/media/farulogo.png": "/JurisEdge-ReactProject/static/media/farulogo.82a499e62e4d4dbfdb98.png",
     "static/media/ambedkar.jpg": "/JurisEdge-ReactProject/static/media/ambedkar.6ed7eac696ee252ca8ef.jpg",
     "index.html": "/JurisEdge-ReactProject/index.html",
     "main.7c5c560c.css.map": "/JurisEdge-ReactProject/static/css/main.7c5c560c.css.map",
-    "main.782924bb.js.map": "/JurisEdge-ReactProject/static/js/main.782924bb.js.map",
+    "main.d6ff3c88.js.map": "/JurisEdge-ReactProject/static/js/main.d6ff3c88.js.map",
     "453.96453769.chunk.js.map": "/JurisEdge-ReactProject/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7c5c560c.css",
-    "static/js/main.782924bb.js"
+    "static/js/main.d6ff3c88.js"
   ]
 }
