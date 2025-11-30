@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/your-repo-name/static/css/main.13681a25.css",
+    "main.js": "/your-repo-name/static/js/main.c4feb285.js",
+    "static/js/453.96453769.chunk.js": "/your-repo-name/static/js/453.96453769.chunk.js",
+    "static/media/farukpic.jpg": "/your-repo-name/static/media/farukpic.24943ba11086996f1888.jpg",
+    "static/media/farulogo.png": "/your-repo-name/static/media/farulogo.82a499e62e4d4dbfdb98.png",
+    "static/media/ambedkar.jpg": "/your-repo-name/static/media/ambedkar.6ed7eac696ee252ca8ef.jpg",
+    "index.html": "/your-repo-name/index.html",
+    "main.13681a25.css.map": "/your-repo-name/static/css/main.13681a25.css.map",
+    "main.c4feb285.js.map": "/your-repo-name/static/js/main.c4feb285.js.map",
+    "453.96453769.chunk.js.map": "/your-repo-name/static/js/453.96453769.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13681a25.css",
+    "static/js/main.c4feb285.js"
+  ]
+}
