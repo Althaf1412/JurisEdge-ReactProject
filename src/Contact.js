@@ -29,7 +29,7 @@ const Contact = () => {
 
   // Modal states
   const [activeModal, setActiveModal] = useState(null);
-  const [modalData, setModalData] = useState({});
+  // const [modalData, setModalData] = useState({});
   const [copiedText, setCopiedText] = useState('');
   const [quickEmailData, setQuickEmailData] = useState({
     name: '',
@@ -181,13 +181,13 @@ const Contact = () => {
 
   const openModal = (modalType, data = {}) => {
     setActiveModal(modalType);
-    setModalData(data);
+    // setModalData(data);
     document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
     setActiveModal(null);
-    setModalData({});
+    // setModalData({});
     document.body.style.overflow = 'unset';
   };
 
